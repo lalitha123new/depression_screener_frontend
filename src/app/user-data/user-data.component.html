@@ -1,0 +1,508 @@
+<div class="row" style="margin-left:0px;margin-right:0px;text-align:center;background-color:black;color:white;">
+  
+  <div class="col-md-1" style="text-align:right;">
+    <button type="button" class="btn btn-warning" (click)="back()" style="border-radius: 10%;margin-top:15px;" title="Back"><i class="glyphicon glyphicon-arrow-left"></i></button>
+  </div>
+  <div class="col-md-1" style="text-align:left;">
+    <button class="btn btn-info" style="margin-top:15px;" (click)="download()" title="Download"><i class="glyphicon glyphicon-download"></i></button>
+  </div>
+  <div class="col-md-8" style="text-align:center;background-color:black;color:white;">
+    
+   <h3 class="panel-heading" >
+   <!-- <b>DEPARTMENT OF CLINICAL PSYCHOLOGY</b><br>
+   <b>NATIONAL INSTITUTE OF MENTAL HEALTH AND NEUROSCIENCES</b> -->
+   <b>WELCOME TO SAMS</b><br>
+   <b>Self-Awareness of Mood Symptoms</b>
+  </h3>
+  
+  </div>
+  <div class="col-md-1">
+    <!-- <button type="button" class="btn btn-warning" (click)="back()" style="border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>Back</button> -->
+  
+</div>
+<div class="col-md-1">
+  <button type="button" class="btn btn-primary" title="Logout" (click)="logOut()" style="border-radius: 10%;margin-top:15px;"><i class="glyphicon glyphicon-log-out"></i></button>
+</div>
+  </div>
+
+<div class="row" style="margin-left:0px;margin-right:0px;">
+  <div class="col-md-12" style=" background-color:#fcfbb1;">
+    <div class="col-md-2">
+      <!-- <button class="btn btn-info" style="margin-top:15px;" (click)="download()">Download</button> -->
+    </div>
+<div class=" col-md-8 header-div" style=" margin: auto;text-align:center;">
+  <h2><b>{{company_name}}</b></h2>
+<h2 class="header-w3ls header_class" style="padding-top:0px;" >User Response Data</h2>
+
+</div>
+<div class="col-md-1">
+    <!-- <button type="button" class="btn btn-warning" (click)="back()" style="border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>Back</button> -->
+  
+</div>
+<div class="col-md-1">
+  <!-- <button type="button" class="btn btn-primary" (click)="logOut()" style="border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>  Logout</button> -->
+</div>
+</div>
+</div>
+<div style="margin-top:20px;">
+    
+    
+      
+    <div class="col-md-12">
+
+        
+        <!-- <div style="text-align:center;margin-bottom:20px;"><span style="font-weight:bold;">Search: </span><input type="text" id="search" placeholder="Enter User_Id"></input></div> -->
+        
+        
+        <div id="divID_new" style="padding-top:0px;overflow:scroll;height:400px;background-color:white;border:2px solid black;">
+         
+          <table id="table1" width="100%">
+          <thead>
+          
+          <tr style="border:2px solid black">
+          
+            <th class="header_class1">Sl.No</th>
+            <th class="header_class1">Date</th>
+            <th class="header_class1">User_Id</th>
+
+            <th class="header_class1">Age</th>
+            <th class="header_class1">Gender</th>
+            <th class="header_class1">Survey</th>
+            <!-- <th class="header_class">User_name</th>
+            <th class="header_class">Age</th>
+            <th class="header_class">Sex</th> -->
+            
+            <!-- <th class="header_class1">R1<p class="new_header_class" title="Have you sought help from a mental health professional any time in your life?">Q1</p></th>
+            <th class="header_class1">R1<p class="new_header_class" title="Do you think you are currently dealing with a mental health problem? ">Q2</p></th>
+            <th class="header_class1">R1<p class="new_header_class" title="Are you currently seeking help from a professional for a mental health problem?">Q3</p></th>
+             -->
+            <th class="header_class1">R2<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems?Little interest or pleasure in doing things">Depress Q1</p></th>
+            <th class="header_class1">R2 <p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems? Feeling down, depressed, or hopeless">Depress Q2</p></th>
+            <th class="header_class1">R2  <p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems? Trouble falling or staying asleep, or sleeping too much.">Depress Q3</p></th>
+            <th class="header_class1">R2 <p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems?Feeling tired or having little energy.">Depress Q4</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems? Poor appetite or overeating">Depress Q5</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems?Feeling bad about yourself or that you are a failure or have let yourself or your family down">Depress Q6</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems?Trouble concentrating on things, such as reading the newspaper or watching television">Depress Q7</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems?Moving or speaking so slowly that other people could have noticed? Or the opposite being so fidgety or restless that you have been moving around a lot more than usual">Depress Q8</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by any of the following problems?Thoughts that you would be better off dead or of hurting yourself in some way">Depress Q9</p></th>
+            <th class="header_class1">R2<p class="new_header_class">Depress Score</p></th>
+            
+            <th class="header_class1">R2<p class="new_header_class" title="Have you ever attempeted to hurt yourself in the past? ">P4Screener Q1</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Have you thought about how you might actually hurt yourself?">P4Screener Q2</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="There is a big difference between having a thought and acting on a thought. How likely do you think it is that you will act on any thoughts about hurting yourself or ending your life sometime over the next month?">P4Screener Q3</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="Are there things in you/your life that will stop you (prevent you) from harming yourself? (Things that would help you to avoid putting suicidal thoughts into action)">P4Screener Q4</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="If yes,please specify?">Q4 If yes,please specify</p></th>
+            <th class="header_class1">R2<p class="new_header_class" title="p4 screener score">P4Screener Score</p></th>
+            
+            
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems? Feeling nervous, anxious or on edge">Anxiety Q1</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems?Not being able to stop or control worrying">Anxiety Q2</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems?Worrying too much about different things">Anxiety Q3</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems?Trouble relaxing">Anxiety Q4</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems?Being so restless that it is hard to sit still">Anxiety Q5</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems? Becoming easily annoyed or irritable">Anxiety Q6</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Over the last 2 weeks, how often have you been bothered by the following problems?Feeling afraid as if something awful might happen">Anxiety Q7</p></th>
+            <th class="header_class1">R3<p class="new_header_class">Anxiety Score</p></th>
+            
+            <th class="header_class1">R3<p class="new_header_class" title="Because of my [problem] my ability to work is impaired.">Current.Func Q1</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title=" Because of my [problem] my home management (cleaning, tidying, shopping, cooking, looking after home or children, paying bills) is impaired.">Current.Func Q2</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Because of my [problem] my social leisure activities (with other people e.g. parties, bars, clubs, outings, visits, dating, home entertaining) are impaired.">Current.Func Q3</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Because of my [problem], my private leisure activities (done alone, such as reading, gardening, collecting, sewing, walking alone) are impaired.">Current.Func Q4</p></th>
+            <th class="header_class1">R3<p class="new_header_class" title="Because of my [problem], my ability to form and maintain close relationships with others, including those I live with, is impaired.">Current.Func Q5</p></th>
+            <th class="header_class1">R3<p class="new_header_class">Current.Func Score</p></th>
+            
+            
+            <!-- <th class="header_class1">R4<p class="new_header_class">Q1</p></th>
+            <th class="header_class1">R4<p class="new_header_class">Q2</p></th>
+            <th class="header_class1">R4<p class="new_header_class">Q3(selected options)</p></th> -->
+          
+            <th class="header_class1" style="padding-left:90px;padding-right:90px;">Overall<p class="new_header_class">score</p></th>
+           
+            <!-- <th class="header_class1">Date1<p class="new_header_class"></p></th>
+            <th class="header_class1">Screener1<p class="new_header_class"> after 10 sections</p></th>
+            <th class="header_class1">Date2<p class="new_header_class"></p></th>
+            <th class="header_class1">Screener2<p class="new_header_class">after 3 weeks</p></th>  -->
+            
+          
+          
+          </tr>
+          </thead>
+
+          <tbody>
+              <tr *ngFor="let test of dataArray; let i = index">
+                  <td>{{i+1}}</td>
+                  <td>{{test.data1}}</td>
+                  <td><a [routerLink]="" (click)="displayResponseOfUser(test.data2)">{{test.data2}}</a></td>
+
+                  <td>{{test.data34}}</td>
+                  <td>{{test.data35}}</td>
+                  <td>{{test.data36}}</td>
+
+                  
+                  <td>{{test.data3}}</td>
+                  <td>{{test.data4}}</td>
+                  <td>{{test.data5}}</td>
+                  <td>{{test.data6}}</td>
+                  <td>{{test.data7}}</td>
+                  <td>{{test.data8}}</td>
+                  <td>{{test.data9}}</td>
+                  <td>{{test.data10}}</td>
+                  <td>{{test.data11}}</td>
+                  <td>{{test.data12}}</td>
+                  <td>{{test.data13}}</td>
+                  <td>{{test.data14}}</td>
+                  <td>{{test.data15}}</td>
+                  <td>{{test.data16}}</td>
+                  <td>{{test.data17}}</td>
+                  <td>{{test.data18}}</td>
+                  <td>{{test.data19}}</td>
+                  <td>{{test.data20}}</td>
+                  <td>{{test.data21}}</td>
+                  <td>{{test.data22}}</td>
+                  <td>{{test.data23}}</td>
+                  <td>{{test.data24}}</td>
+                  <td>{{test.data25}}</td>
+                  <td>{{test.data26}}</td>
+                  <td>{{test.data27}}</td>
+                  <td>{{test.data28}}</td>
+                  <td>{{test.data29}}</td>
+                  <td>{{test.data30}}</td>
+                  <td>{{test.data31}}</td>
+                  <td>{{test.data32}}</td>
+                  <td>{{test.data33}}</td>
+                  
+
+                  
+                </tr>
+          </tbody>
+          
+          </table>
+        
+        </div>
+        <!-- <div class="col-md-12">
+        <div class="" style="margin-top:20px;float:right">
+        <button class="btn btn-info" (click)="download_table()">Download</button>
+      </div>
+
+        <div class="footer" id="footer">
+            
+            <div class=" text-center wow fadeIn" data-wow-delay="0.4s">
+              <p class="copyright">Copyright &copy; 2019 - NIMHANS</p>
+            </div>
+          
+          </div>
+        </div> -->
+        
+        </div>
+      </div>
+
+      <div class="modal fade" id="feedbackmodal" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header modal-header-success" style="background: #4CAF50;color: white">
+            <button type="button" class="btn btn-success" (click)="close_modal()" style="float:right;">&times;</button>
+            
+              <p id="feedback_of_user_id" style="font-weight:bold;text-align:center;">Scores and overall feedback of user_id :{{id}} </p>
+            </div>
+            
+            <div class="modal-body text-justify">
+            
+              <div class="center-container" style="background-color:white;">
+				<div class="col-md-12" style="padding-bottom:20px;">
+                <div class="col-md-9">
+                <!-- <h5 style="text-align:left;margin-bottom:40px;">Our gauge of You:<br><br>-->
+                <br><br>
+                <h4>Based on your response, this is how we rate you, on current mood and  functioning indicators.</h4>
+                </div>
+                
+                <div class="col-md-3">
+                <!-- new table added -->
+                 <table style="margin-left:50px;">
+                  <tr style="margin-bottom:10px;">
+                  <td style="background-color:#dee7f4;width:15px;height:15px;"></td><td style="border:none;padding:0px;"><span style="text-align:right;margin-left:10px;">None</span></td>
+                  <!-- <br><span style="text-align:right;margin-left:10px;"> Reported</span> -->
+                  </tr>
+                  </table><br>
+                  
+                  <table style="margin-left:50px;">
+                  <tr style="margin-bottom:10px;">
+                  <td style="background-color:#66EAE8;width:15px;height:15px;"></td><td style="border:none;padding:0px;"><span style="text-align:right;margin-left:10px;">Mild</span></td>
+                  </tr>
+                  </table><br>
+                
+                  <table style="margin-left:50px;">
+                  <tr>
+                  <td style="background-color:#0080ff;width:15px;height:15px;"></td><td style="border:none;padding:0px;"><span style="text-align:right;margin-left:10px;">Moderate</span></td>
+                  </tr>
+                  </table><br>
+                
+                  <table style="margin-left:50px;">
+                  <tr>
+                  <td style="background-color:#000099;width:15px;height:15px;"></td><td style="border:none;padding:0px;"><span style="text-align:right;margin-left:10px;">Severe</span></td>
+                  </tr>
+                  </table>
+                  
+                </div>
+              </div>
+                <div class="clear"></div>
+                
+                
+                
+                
+                <div class="col-md-12">
+                <div class="col-md-3 col-sm-2"><span style="font-weight:bold;text-align:right">Depressive Symptoms</span></div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:right;padding-right:0px;"><p>None 
+              </p></div>
+                
+                <div class="col-md-7 col-sm-8">
+                
+                  <table class="score_table" style="margin:0px;width:100%;">
+                  <tbody>
+                  
+                  <tr class="gradient_class">
+                  
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  
+                  </tr>
+                  
+                  
+                  
+                  <tr>
+                  
+                  <td style="height:15px;border:none;padding:0px;" id="arrow1"><p id="icon1" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  
+                  <td style="height:15px;border:none;padding:0px;" id="arrow2"><p id="icon2" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow3"><p id="icon3" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow4"><p id="icon4" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  
+                  </tr>
+                  
+                  
+                  
+                  <tr>
+                  
+                  <td style="height:15px;border:none;padding:0px;" id="col1_new"><p id="p1_new" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  
+                  <td style="height:15px;border:none;padding:0px;" id="col1"><p id="p1" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col2"><p id="p2" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col3"><p id="p3" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  
+                  </tr>
+                  
+                  </tbody>
+                  </table>
+                  
+                </div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:left;"><p>Severe</p></div>
+                
+                <div class="clear"></div>
+                
+                
+                <div class="col-md-12">
+                <div class="col-md-3 col-sm-2"><span style="font-weight:bold;">Anxiety Symptoms</span></div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:right;padding-right:0px;"><p>None</p></div>
+                
+                <div class="col-md-7 col-sm-8">
+                
+                  <table class="score_table" style="margin:0px;width:100%;">
+                  
+                  
+                  <tbody>
+                  <tr class="gradient_class">
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;"  id=""><p id="" class="hidden" style="color:white;text-align:center;font-weight:bold;">Your Score</p></td>
+                  </tr>
+                  
+                  
+                  <tr>
+                  
+                  <td style="height:15px;border:none;padding:0px;" id="arrow5"><p id="icon5" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  
+                  <td style="height:15px;border:none;padding:0px;" id="arrow6"><p id="icon6" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow7"><p id="icon7" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow8"><p id="icon8" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  
+                  </tr>
+                  
+                  
+                  <tr>
+                  <td style="height:15px;border:none;padding:0px;" id="col4_new"><p id="p4_new" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col4"><p id="p4" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col5"><p id="p5" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col6"><p id="p6" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  
+                </div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:left;"><p>Severe</p></div>
+              </div>
+                <div class="clear"></div>
+                
+                
+                <div class="col-md-12">
+                <div class="col-md-3 col-sm-3"><span style="font-weight:bold;">Self-rated<br> Suicidal Thoughts</span></div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:right;padding-right:0px;"><p>None</p></div>
+                
+                <div class="col-md-7 col-sm-7">
+                
+                  <table class="score_table" style="margin:0px;width:100%;">
+                  
+                  
+                  <tbody>
+                  <tr class="gradient_class">
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score<br>(Minimal)</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score<br>(Low)</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score<br>(High)</p></td>
+                  </tr>
+                  
+                  <tr>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow9"><p id="icon9" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow10"><p id="icon10" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow11"><p id="icon11" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow12"><p id="icon12" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  </tr>
+                  
+                  <tr>
+                  <td style="height:15px;border:none;padding:0px;" id="col7_new"><p id="p7_new" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col7"><p id="p7" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score<br>(Minimal)</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col8"><p id="p8" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score<br>(Low)</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col9"><p id="p9" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score<br>(High)</p></td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  
+                </div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:left;"><p>Severe</p></div>
+              </div>
+                <div class="clear"></div>
+                
+                
+                <div class="col-md-12">
+                <div class="col-md-3 col-sm-3"><span style="font-weight:bold;">Interference With<br> Daily Functioning</span></div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:right;padding-right:0px;"><p>None</p></div>
+                
+                <div class="col-md-7 col-sm-7">
+                  <table class="score_table" style="margin:0px;width:100%;">
+                  
+                  
+                  <tbody>
+                  <tr class="gradient_class">
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id=""><p id="" class="hidden" style="color:white;text-align:center;font-weight:bold;">Your Score</p></td>
+                  </tr>
+                
+                  <tr>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow13"><p id="icon13" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow14"><p id="icon14" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow15"><p id="icon15" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="arrow16"><p id="icon16" class="hidden" style="color:black;text-align:center;font-weight:bold;"><span class="glyphicon glyphicon-arrow-up"></span></p></td>
+                  </tr>
+                  
+                  <tr>
+                  <td style="height:15px;border:none;padding:0px;" id="col10_new"><p id="p10_new" class="hidden" style="color:black;text-align:center;font-weight:bold;">None Reported</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col10"><p id="p10" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col11"><p id="p11" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  <td style="height:15px;border:none;padding:0px;" id="col12"><p id="p12" class="hidden" style="color:black;text-align:center;font-weight:bold;">Your Score</p></td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  
+                </div>
+                <div class="col-md-1 col-sm-1 feedback_label" style="text-align:left;"><p>Severe</p></div>
+              </div>
+                <div class="clear"></div>
+                <div class="col-md-12">
+                <p style="font-size:15px;text-align:justify;">
+                  <b>This tool is NOT meant to diagnose depression or anxiety and should NOT be  treated as a  substitute for professional consultation. 
+                </b></p>
+                <br>
+                <p style="font-size:15px;text-align:justify;">
+                  <b>This page is meant to provide you a very basic/crude feedback about presence of depressive/anxiety symptoms and functioning, so that you may choose an appropriate course of action.
+                </b></p>
+                <p style="font-size:15px;text-align:justify;">
+                  <b>The feedback provided is dependent on your responses about current symptoms only. Moreover, this is not a comprehensive tool to asses all kinds of mental health concerns but is restricted to depressive and anxiety symptoms.
+
+                </b></p>
+                <p id="recommend" style="font-size:15px;text-align:center;"></p>
+                
+                <p id="feedback1" class="hidden" style="color:darkblue;"><b> 	You are experiencing mild severity of depressive symptoms.<br>
+                     You report minimal I disturbance in your functioning. <br>
+                        In addition, you report no significant anxiety symptoms.<br>
+                        Or <br>
+                         In addition   you report minimal anxiety symptoms.<br><br><br>
+                         You may register   for PUSH-D for self-help. <br><br>
+                         Please   remember that PUSH-D is   not a tool for providing diagnosis, nor it is a substitute for professional   consultation and treatment. Seeking face to face professional consultation is useful   for provide an accurate and comprehensive evaluation of  mental health  issues. </b></p>
+                  
+                  <p id="feedback2" class="hidden" style="color:darkblue;"><b> 	You are experiencing moderate severity of depressive symptoms. <br>
+                         Your responses indicate absence of significant suicidal thoughts or a sense of control over such thoughts. <br>
+                          You have indicated clinically significant level/ moderate severity of disturbance in your functioning.<br>
+                           In addition, you report mild/moderate level of anxiety symptoms.<br><br>
+                           You may register for and use PUSH-D. But  we  would  strongly  recommend   you to use   it  as a supplement  /add-on to face  to face   professional  treatment.<br><br><br>
+                           
+                        Please   remember that PUSH-D is   not a tool for providing diagnosis, nor it is a substitute for professional   consultation and treatment. Seeking face to face professional consultation is useful   for provide an accurate and comprehensive evaluation of mental health  issues. 
+                           </b></p>
+                           
+                           
+                  <p id="feedback3" class="hidden" style="color:darkblue;"><b>You are experiencing severe depressive symptoms.<br>
+                  Your responses indicate presence of suicidal thoughts and difficulties in controlling such thoughts<br>
+                  You have indicated clinically significant level/severe/ moderate severity of- disturbance in your functioning.<br>
+                  In addition,   you have indicated mild/moderate/severe anxiety symptoms.<br><br><br>
+                  We strongly recommend   you to seek face to face/direct professional help for   your mental health concerns. Mere reliance on PUSH-D will be very insufficient to help   you. We can provide    you guidance on seeking referral with a mental health professional in   your  region, if  you so desire Let us know  if   you need   such help in finding  a mental health professional  and  we  will try  to help  with that. Once   you have initiated  treatment,   you can  let us know/ request   your doctor  to contact  us and  we  can  re-examine  the  suitability of PUSH-D  for  you at that  point.  Email for contacting us: push.d.nimhans@gmail.com</b></p>
+                
+
+                  <p style="font-size:15px;text-align:justify;">
+                    <b>Self-care includes being responsible for one’s health and reaching out for help  when you may need it
+                  </b></p>
+                  <p style="font-size:15px;text-align:justify;"><b>Links to self-help programmes:</b></p>
+                  <p style="font-size:15px;text-align:justify;"><b>PUSH-D</b></p>
+                  <p style="font-size:15px;text-align:justify;">
+                    <b>Practice and Use Self-Help for Depression (PUSH-D) is an internet based self help programme for depressive symptoms. Please click on the link below to know more and access PUSH-D. To skip the registration process that you just completed and start using PUSH-D directly,  mail us on push.d.nimhans@gmail.com or send a text to 9483029609
+                  </b></p>
+                  <a href="https://echargementalhealth.nimhans.ac.in/pushd/"><span style="text-decoration:underline;"><b>Click Here For pushd</b></span></a>
+                 <br><br>
+                 <p style="font-size:15px;text-align:justify;"><b>PUSH-D PLUS</b></p>
+                  <p style="font-size:15px;text-align:justify;">
+                    <b>PUSH-D is now being tested/researched as a combination package (PUSH-D + few face-to-face sessions + weekly telephonic support). To know more or participate in the research, please mail us on push.d.nimhans@gmail.com or send a text to 9483029609
+                    </b></p>
+                    <p style="font-size:15px;text-align:justify;"><b>Wellness Check</b></p>
+                    <p style="font-size:15px;text-align:justify;"><b>Wellness check is a brief internet-based programme to help you learn and reflect on various aspects of your current mental well being and access some strategies for enhancing your well being. Click on the link below to access the programme
+                    </b></p>
+                    <a href="https://echargementalhealth.nimhans.ac.in/wellness-check/"><span style='text-decoration:underline;'><b>Click Here For wellness-check</b></span></a>
+                </div>
+              </div>
+          </div>
+            
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-primary"  (click)="close_modal()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- <div class="footer" id="footer">
+            
+      <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
+        <p class="copyright">Copyright &copy; 2019 - NIMHANS</p>
+      </div>
+    
+    </div> -->
+
+    <!-- <div class="footer" id="footer">
+            
+      <div class=" text-center wow fadeIn" data-wow-delay="0.4s">
+        <p class="copyright">Copyright &copy; 2019 - NIMHANS</p>
+      </div>
+    
+    </div> -->

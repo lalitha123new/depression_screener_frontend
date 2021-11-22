@@ -1,0 +1,559 @@
+<div class="row" style="margin-left:0px;margin-right:0px;text-align:center;background-color:black;color:white;">
+  <div class="col-md-2"></div>
+  <div class="col-md-8" style="text-align:center;background-color:black;color:white;">
+    
+   <h3 class="panel-heading" >
+   <!-- <b>DEPARTMENT OF CLINICAL PSYCHOLOGY</b><br>
+   <b>NATIONAL INSTITUTE OF MENTAL HEALTH AND NEUROSCIENCES</b> -->
+   <b>WELCOME TO SAMS</b><br>
+   <b>Self-Awareness of Mood Symptoms</b>
+  </h3>
+  
+  </div>
+  <div class="col-md-1"></div>
+
+      <div class="col-md-1">
+        <button type="button" class="btn btn-primary" title="Logout" (click)="logOut()" style="border-radius: 10%;margin-top:10px;margin-bottom:10px;"><i class="glyphicon glyphicon-log-out"></i></button>
+      </div>
+  </div>
+<div class="center-container" style="padding-top:0px;">
+
+    <div class="row" style="margin-left:0px;margin-right:0px;">
+    
+       
+          <div class="col-md-12" style=" background-color:  #fcfbb1;">
+
+          <div class="col-md-2"></div>
+      <div class=" col-md-8 header-div" style=" margin: auto;text-align:center;">
+      </div>
+      <div class="col-md-1"></div>
+
+      <div class="col-md-1">
+        <!-- <button type="button" class="btn btn-primary" (click)="logOut()" style="border-radius: 10%;margin-top:10px;margin-bottom:10px;"><i class="w3-medium fa fa-sign-out"></i>  Logout</button> -->
+      </div>
+
+    </div>
+
+  </div>
+
+    <div class="row" style="margin-left:0px;margin-right:0px;">
+    <div class="col-md-12">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" style="text-align:center;">
+        <h5>Basics about yourself:</h5>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+      <div class="col-md-12">
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-3">
+          <div class="form-group">
+						<label class="label-css"><b>Age</b></label> <span>*</span> <input
+							 type="number" id="num1" 
+							onKeyUp="if(this.value.length==2){return false;}else if(this.value.length>2){this.value='';}"
+							class="form-control input" alt="Enter age" required="true">
+					</div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="form-group">
+						<label class="label-css"><b>Gender</b></label> <span>*</span>
+				<div class="radio">
+						<input id="radio-1" name="radio_gender" type="radio" value="Male" required="true"><label
+                for="radio-1" class="radio-label">Male</label>
+            <input
+								id="radio-2" name="radio_gender" type="radio" value="Female" required="true"><label
+                for="radio-2" class="radio-label">Female</label>
+                
+            <input
+								id="radio-3" name="radio_gender" type="radio" value="other" required="true"><label
+								for="radio-3" class="radio-label">Other</label>
+				</div>
+        </div>
+        </div>
+
+        <div class="col-md-3"></div>
+        
+      </div>
+
+
+      <div class="clear"></div>
+
+
+      <div class="col-md-12">
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+          <p style="font-size:16px;"><b>Have you completed this survey before, entering your organization code on this website?</b></p>
+          
+				<div class="radio">
+						<input id="radio-4" name="radio_survery" type="radio" value="Yes" required="true"><label
+                for="radio-4" class="radio-label">Yes</label>
+            <input
+								id="radio-5" name="radio_survery" type="radio" value="No" required="true"><label
+                for="radio-5" class="radio-label">No</label>
+        </div>
+        </div>
+
+        <div class="col-md-3"></div>
+
+      </div>
+
+      <div class="col-md-12">
+        
+        
+    <div class="content-top" style="background-color:#fcfbb1;">
+      
+
+    <div class="header-div" style="background-color:#fcfbb1;width:100%;margin-left:auto;margin-right:auto;margin-bottom:30px;">
+    <h4 class="header-w3ls header_class">Brief Assessment<br>(Depressive Symptoms)</h4>
+    </div>
+    
+        
+        <div id="q4" class="q required">
+          <a class="item_anchor" name="ItemAnchor4"></a>
+          <span class="question top_question">Instructions: Below is a list of statements dealing with your mood in the last 2 weeks. 
+          Please read the items carefully and mark the option (&#10004;) that best describes you.&nbsp;<b class="icon_required" style="color:#FF0000">*</b></span>
+          <br>
+          <br>
+          
+          <table class="matrix1">
+
+          <tr>
+            <th scope="col">Over the last 2 weeks, how often have you
+              been bothered by any of the following problems?&nbsp;</th>
+            <th width="60px;" scope="col">Not at all</th>
+            <th width="60px;" scope="col">Several Days</th>
+            <th width="60px;" scope="col">More than half the days</th>
+            <th width="60px;" scope="col">Nearly every day</th>
+          </tr>
+          
+          <tr class="matrix_row_light">
+            <td class="question" style="width: px;">1. Little interest
+              or pleasure in doing things.</td>
+            <td><label for="RESULT_RadioButton-4-0-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-0"
+              class="multiple_choice" id="RESULT_RadioButton-4-0-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-0-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-0" class="multiple_choice"
+              id="RESULT_RadioButton-4-0-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-0-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-0" class="multiple_choice"
+              id="RESULT_RadioButton-4-0-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-0-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-0" class="multiple_choice"
+              id="RESULT_RadioButton-4-0-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_dark">
+            <td class="question" style="width: px;">2. Feeling down,
+              depressed, or hopeless</td>
+            <td><label for="RESULT_RadioButton-4-1-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-1"
+              class="multiple_choice" id="RESULT_RadioButton-4-1-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-1-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-1" class="multiple_choice"
+              id="RESULT_RadioButton-4-1-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-1-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-1" class="multiple_choice"
+              id="RESULT_RadioButton-4-1-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-1-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-1" class="multiple_choice"
+              id="RESULT_RadioButton-4-1-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_light">
+            <td class="question" style="width: px;">3. Trouble falling
+              or staying asleep, or sleeping too much</td>
+            <td><label for="RESULT_RadioButton-4-2-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-2"
+              class="multiple_choice" id="RESULT_RadioButton-4-2-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-2-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-2" class="multiple_choice"
+              id="RESULT_RadioButton-4-2-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-2-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-2" class="multiple_choice"
+              id="RESULT_RadioButton-4-2-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-2-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-2" class="multiple_choice"
+              id="RESULT_RadioButton-4-2-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_dark">
+            <td class="question" style="width: px;">4. Feeling tired or
+              having little energy</td>
+            <td><label for="RESULT_RadioButton-4-3-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-3"
+              class="multiple_choice" id="RESULT_RadioButton-4-3-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-3-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-3" class="multiple_choice"
+              id="RESULT_RadioButton-4-3-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-3-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-3" class="multiple_choice"
+              id="RESULT_RadioButton-4-3-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-3-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-3" class="multiple_choice"
+              id="RESULT_RadioButton-4-3-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_light">
+            <td class="question" style="width: px;">5. Poor appetite or
+              overeating</td>
+            <td><label for="RESULT_RadioButton-4-4-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-4"
+              class="multiple_choice" id="RESULT_RadioButton-4-4-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-4-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-4" class="multiple_choice"
+              id="RESULT_RadioButton-4-4-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-4-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-4" class="multiple_choice"
+              id="RESULT_RadioButton-4-4-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-4-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-4" class="multiple_choice"
+              id="RESULT_RadioButton-4-4-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_dark">
+            <td class="question" style="width: px;">6. Feeling bad about
+              yourself or that you are a failure or have let yourself or your
+              family down</td>
+            <td><label for="RESULT_RadioButton-4-5-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-5"
+              class="multiple_choice" id="RESULT_RadioButton-4-5-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-5-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-5" class="multiple_choice"
+              id="RESULT_RadioButton-4-5-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-5-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-5" class="multiple_choice"
+              id="RESULT_RadioButton-4-5-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-5-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-5" class="multiple_choice"
+              id="RESULT_RadioButton-4-5-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_light">
+            <td class="question" style="width: px;">7. Trouble
+              concentrating on things, such as reading the newspaper or
+              watching television</td>
+            <td><label for="RESULT_RadioButton-4-6-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-6"
+              class="multiple_choice" id="RESULT_RadioButton-4-6-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-6-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-6" class="multiple_choice"
+              id="RESULT_RadioButton-4-6-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-6-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-6" class="multiple_choice"
+              id="RESULT_RadioButton-4-6-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-6-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-6" class="multiple_choice"
+              id="RESULT_RadioButton-4-6-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_dark">
+            <td class="question" style="width: px;">8. Moving or
+              speaking so slowly that other people could have noticed? Or the
+              opposite being so fidgety or restless that you have been
+              moving around a lot more than usual</td>
+            <td><label for="RESULT_RadioButton-4-7-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-7"
+              class="multiple_choice" id="RESULT_RadioButton-4-7-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-7-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-7" class="multiple_choice"
+              id="RESULT_RadioButton-4-7-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-7-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-7" class="multiple_choice"
+              id="RESULT_RadioButton-4-7-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-7-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-7" class="multiple_choice"
+              id="RESULT_RadioButton-4-7-3" value="3" /></td>
+            
+          </tr>
+          
+          <tr class="matrix_row_light">
+            <td class="question" style="width: px;">9. Thoughts that you
+              would be better off dead or of hurting yourself in some way</td>
+            <td><label for="RESULT_RadioButton-4-8-0"
+              class="hidden">Strongly Agree</label><input
+              type="radio" name="RESULT_RadioButton-4-8"
+              class="multiple_choice" id="RESULT_RadioButton-4-8-0" value="0" /></td>
+            <td><label for="RESULT_RadioButton-4-8-1"
+              class="hidden">Agree</label><input type="radio"
+              name="RESULT_RadioButton-4-8" class="multiple_choice"
+              id="RESULT_RadioButton-4-8-1" value="1" /></td>
+            <td><label for="RESULT_RadioButton-4-8-2"
+              class="hidden">Neutral</label><input type="radio"
+              name="RESULT_RadioButton-4-8" class="multiple_choice"
+              id="RESULT_RadioButton-4-8-2" value="2" /></td>
+            <td><label for="RESULT_RadioButton-4-8-3"
+              class="hidden">Disagree</label><input type="radio"
+              name="RESULT_RadioButton-4-8" class="multiple_choice"
+              id="RESULT_RadioButton-4-8-3" value="3" /></td>
+            
+          </tr>
+          
+          </table>
+          
+          
+        </div>
+
+        <!-- end of first screener -->
+        <!-- begin second screener -->
+
+        <div class="clear"></div>
+<br>
+					<div class="col-md-6" >
+
+					<div class="form-group">
+					
+						<label class="label-css">Since how long   you have been having the depressive symptoms CURRENTLY that you marked in the above questionnaire? <span>*</span></label> 
+						
+						<div class="radio">
+						
+						<input id="radio-ad1" name="radio_long"  type="radio" [(ngModel)]="register2_obj.radio_long" value="less than 2" required="true"><label
+								for="radio-ad1" class="radio-label">Less than 2 weeks</label><br>
+						<input id="radio-ad2" name="radio_long"  type="radio"  [(ngModel)]="register2_obj.radio_long" value="2-4 weeks" required="true"><label
+								for="radio-ad2" class="radio-label radio-pad">2-4 weeks</label> <br>
+						<input id="radio-ad3" name="radio_long"  type="radio" [(ngModel)]="register2_obj.radio_long" value="1-2 months" required="true"><label
+								for="radio-ad3" class="radio-label radio-pad">1-2 months</label><br>
+						<input id="radio-ad4" name="radio_long"  type="radio" [(ngModel)]="register2_obj.radio_long" value="2-6 moths" required="true"><label
+								for="radio-ad4" class="radio-label radio-pad">2-6 months</label><br>
+						<input id="radio-ad5" name="radio_long"  type="radio" [(ngModel)]="register2_obj.radio_long" value="6-1year" required="true"><label
+								for="radio-ad5" class="radio-label radio-pad">6 months to 1 year</label>
+						<input id="radio-ad6" name="radio_long"  type="radio" [(ngModel)]="register2_obj.radio_long" value="more than 1 year" required="true"><label
+								for="radio-ad6" class="radio-label radio-pad">More than 1 year</label>
+						</div>
+						
+						</div>
+
+          </div>
+          
+
+
+          <div class="col-md-6">
+
+              <div class="form-group">
+              
+                <label class="label-css">Since how many weeks/months your depressive symptoms may have increased/are interfering  with  your usual  functioning? <span>*</span></label> 
+                
+                <div class="radio">
+                
+                
+                <input id="radio-sr2" name="radio_months" type="radio" [(ngModel)]="register2_obj.radio_months"  value="no infer" required="true"><label
+                    for="radio-sr2" class="radio-label radio-pad">No interference with functioning</label> <br>
+                <input id="radio-sr3" name="radio_months" type="radio" [(ngModel)]="register2_obj.radio_months" value="infer 2-4 weeks" required="true"><label
+                    for="radio-sr3" class="radio-label radio-pad">Interfering since 2-4 weeks</label>
+                <input id="radio-sr4" name="radio_months" type="radio" [(ngModel)]="register2_obj.radio_months" value="infer 1-2 months" required="true"><label
+                    for="radio-sr4" class="radio-label radio-pad">Interfering since 1-2 months</label>
+                <input id="radio-sr5" name="radio_months" type="radio" [(ngModel)]="register2_obj.radio_months" value="infer 2-6 months" required="true"><label
+                    for="radio-sr5" class="radio-label radio-pad label_align">Interfering since 2-6 months</label>
+                <input id="radio-sr6" name="radio_months" type="radio" [(ngModel)]="register2_obj.radio_months" value="infer to 1 year" required="true"><label
+                    for="radio-sr6" class="radio-label radio-pad">Interfering since 6-12 months</label>
+                <input id="radio-sr7" name="radio_months" type="radio" [(ngModel)]="register2_obj.radio_months" value="infer more than 1 year" required="true"><label
+                    for="radio-sr7" class="radio-label radio-pad">Interfering since More than 1 year</label>
+                
+                </div>
+                
+              </div>
+    
+            </div>
+            
+            <div class="clear"></div>
+
+
+
+            <!-- begin p4 screener questions -->
+				<!-- question1 -->
+				
+				<div class="col-md-6">
+				
+				
+            <div class="form-group">
+            
+              <label class="label-css">Have you ever attempeted to hurt yourself in the past?</label> <span>*</span>
+              
+              <div class ="dropdown col-md-6">
+              
+              <select  id ="select_hurt" class="drop_down" style = "background-color:#F0F3FA;">
+              <option  class ="option_class">Select</option>
+              <option value="Yes" class ="option_class">Yes</option>
+              <option value="No"  class ="option_class">No</option>
+                  
+              
+              </select>
+              
+              </div>
+              
+              </div>
+              
+            </div>
+            
+            
+            
+            <!-- question2-->
+            
+            <div class="col-md-6">
+            
+            <div class="form-group">
+            
+              <label class="label-css">Have you thought about how you might actually hurt yourself? </label> <span>*</span>
+              
+              <div class ="dropdown col-md-6">
+              
+              <select  id = "select_hurt_yourself" class="drop_down" style = "background-color:#F0F3FA;">
+              <option class ="option_class">Select</option>
+              <option value="Yes" class ="option_class">Yes</option>
+              <option value="No"  class ="option_class">No</option>
+                  
+              
+              </select>
+              
+              </div>
+              
+              </div>
+              
+            </div>
+            
+            <div class="clear"></div>
+            
+            
+            
+            <!-- question3-->
+            
+             <div class="col-md-6">
+            
+            <div class="form-group">
+            
+              <label class="label-css">There is a big difference between having a thought and acting on a thought.  How likely do you think it is that you will act on  any thoughts about hurting yourself or ending your life sometime over the next month?
+               </label> 
+               
+              
+              <div class="radio">
+              
+              <input id="radio-p4_3_1" name="radio_difference" type="radio" value="Not at all likely" required="true"><label
+                  for="radio-p4_3_1" class="radio-label">Not at all likely</label><br>
+              <input id="radio-p4_3_2" name="radio_difference" type="radio" value="Somewhat likely" required="true"><label
+                  for="radio-p4_3_2" class="radio-label radio-pad">Somewhat likely</label> <br>
+              <input id="radio-p4_3_3" name="radio_difference" type="radio" value="Very likely" required="true"><label
+                  for="radio-p4_3_3" class="radio-label radio-pad">Very likely</label>
+              
+              
+              </div>
+              
+              </div>
+              
+            </div> 
+            
+            
+            <!-- question4-->
+            <div class="col-md-6">
+            
+            <div class="form-group">
+            
+              
+              <label class="label-css">Are there things in you/your life that will stop you (prevent you) from harming yourself? (Things that would help you to avoid putting suicidal thoughts into action)  </label> <span>*</span>
+              <div class ="dropdown col-md-6">
+              
+              <select  id = "select_prevent" class="drop_down" (change)="enbfield()" style = "background-color:#F0F3FA;">
+              <option  class ="option_class">Select</option>
+                  <option value="Yes" class ="option_class">Yes</option>
+                  <option value="No"  class ="option_class">No</option>
+              
+              </select>
+              
+              </div>
+              
+              </div>
+              
+            </div>
+            
+            <div class ="col-md-6">
+            
+            <div class="form-group">
+              
+              <label class="label-css">If yes, please specify</label> 
+              
+              <input id = "prevent_harm" type="text" class="form-control input" 
+                alt="Enter city name" required="true">
+          
+              </div>
+              
+              </div>
+              <div class="clear"></div>
+            
+            
+            
+            <!-- end of p4 screener questions -->
+
+            <div class="row" id="button_class" style="margin-left:0px;margin-right:0px;text-align:center;">
+					
+                <div class="buttons_reverse">
+                  <button type="button"  id="nextbutton2" name="Submit" value="Submit" (click)="submitPage1()" class="submit_button btn btn-primary">Submit</button>
+                 
+                </div>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="pagination">
+        
+              <a  class="active" href="#">1</a>
+              <a href="#">2</a>
+              
+              
+            </div>
+            </div>
+            
+          
+        </div>
+        
+      
+        </div>
+        </div>
+
+
+
+        
+        
+      

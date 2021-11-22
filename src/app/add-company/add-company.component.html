@@ -1,0 +1,109 @@
+<div class="row" style="margin-left:0px;margin-right:0px;text-align:center;background-color:black;color:white;">
+  <div class="col-md-1">
+    <button type="button" class="btn btn-warning" (click)="back()" style="float:right;border-radius: 10%;margin-top:15px;" title="Back"><i class="glyphicon glyphicon-arrow-left"></i></button>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-8" style="text-align:center;background-color:black;color:white;">
+    
+   <h3 class="panel-heading" >
+   <!-- <b>DEPARTMENT OF CLINICAL PSYCHOLOGY</b><br>
+   <b>NATIONAL INSTITUTE OF MENTAL HEALTH AND NEUROSCIENCES</b> -->
+   <b>WELCOME TO SAMS</b><br>
+   <b>Self-Awareness of Mood Symptoms</b>
+  </h3>
+  
+  </div>
+  <div class="col-md-1">
+    <!-- <button type="button" class="btn btn-warning" (click)="back()" style="float:right;border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>  Back</button> -->
+</div>
+<div class="col-md-1">
+  <button type="button" class="btn btn-primary" (click)="logOut()" style="border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>  Logout</button>
+</div>
+  </div>
+
+<div class="row" style="margin-left:0px;margin-right:0px;">
+  <div class="col-md-12" style=" background-color:#fcfbb1;">
+    <div class="col-md-2"></div>
+<div class=" col-md-8 header-div" style=" margin: auto;text-align:center;">
+<h1 class="header-w3ls header_class" style="padding-top:0px;">Add Organisation</h1>
+
+</div>
+<div class="col-md-1">
+    <!-- <button type="button" class="btn btn-warning" (click)="back()" style="float:right;border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>  Back</button> -->
+</div>
+<div class="col-md-1">
+  <!-- <button type="button" class="btn btn-primary" (click)="logOut()" style="border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>  Logout</button> -->
+</div>
+</div>
+</div>
+<div class="row" style="margin-top:20px;margin-left:0px;margin-right:0px;">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+          <form id="addCompany" class="form-horizontal">
+            <div class="panel-body">
+              
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Organisation Name</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" [(ngModel)]="companyName" name="name" placeholder = "Organisation Name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Organisation Code</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" [(ngModel)]="companyCode" name="name" placeholder="Organisation Code">
+                    </div>
+                </div>
+                
+                
+                <div class="form-group">
+                <label class="col-sm-3 control-label">Phone Number</label>
+                <div class="col-sm-8">
+                  <input type="number" class="form-control" [(ngModel)]="phoneNumber"
+                    name="mobileNumber" placeholder="Phone Number">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Mail Id</label>
+                <div class="col-sm-8">
+                  <input type="email" class="form-control" [(ngModel)]="compnayMailId"
+                    name="mailId" placeholder="mailId">
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Address</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" [(ngModel)]="companyAddress"
+                    name="companyAddress" placeholder="Company Address">
+                </div>
+              </div>
+              
+              
+                
+              </div>
+            
+            
+            <div class="panel-footer" style="background-color:#fcfbb1;">
+              <div class="row">
+                <div class="col-md-12">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="text-align:center;">
+                  <div class="">
+                      <button type="button" (click)="addCompany()" class="btn btn-primary" id="addButton">Add</button>
+                      
+                  </div>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+                
+              </div>
+            </div>
+            
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        
+      

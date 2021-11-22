@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "C:/Users/admin/Documents/Projects -  Versions/Screener App versions/sams",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,9 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+		"../node_modules/ngx-toastr/toastr.css",
+		"../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+	  "../node_modules/jquery/dist/jquery.min.js",
+	  "../node_modules/bootstrap/dist/js/bootstrap.js"
+	  ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

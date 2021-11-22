@@ -1,0 +1,73 @@
+
+<div class="row" style="margin-left:0px;margin-right:0px;text-align:center;background-color:black;color:white;">
+  <div class="col-md-2" style="text-align:center;background-color:black;color:white;">
+    <button type="button" class="btn btn-warning" style="border-radius: 10%;margin-top:15px;" (click)="add()" title="Add Organisation"><i class="glyphicon glyphicon-plus">Organisation</i></button>
+  </div>
+  <div class="col-md-8" style="text-align:center;background-color:black;color:white;">
+    
+   <h3 class="panel-heading" >
+   <!-- <b>DEPARTMENT OF CLINICAL PSYCHOLOGY</b><br>
+   <b>NATIONAL INSTITUTE OF MENTAL HEALTH AND NEUROSCIENCES</b> -->
+   <b>WELCOME TO SAMS</b><br>
+   <b>Self-Awareness of Mood Symptoms</b>
+  </h3>
+  
+  </div>
+  <div class="col-md-1">
+    <!-- <button type="button" class="btn btn-warning" style="border-radius: 10%;margin-top:15px;" (click)="add()"><i class="glyphicon glyphicon-plus">Organisation</i></button> -->
+  </div>
+  <div class="col-md-1">
+    <button type="button" class="btn btn-primary" title="Logout" (click)="logout()" style="border-radius: 10%;margin-top:15px;"><i class="glyphicon glyphicon-log-out"></i></button>
+  </div>
+  </div>
+     <div class="row" style="margin-left:0px;margin-right:0px;">
+      <div class="col-md-12" style=" background-color:#fcfbb1;">
+        <div class="col-md-2">
+          <!-- <button type="button" class="btn btn-basic" style="border-radius: 10%;margin-top:15px;" (click)="responseData()">Responses</button> -->
+      </div>
+    <div class=" col-md-8 header-div" style=" margin: auto;text-align:center;">
+    <h1 class="header-w3ls header_class" >List of Organisations</h1>
+    
+    </div>
+    
+    <!-- <div class="col-md-1">
+      <button type="button" class="btn btn-warning" style="border-radius: 10%;margin-top:15px;" (click)="add()"><i class="glyphicon glyphicon-plus">Organisation</i></button>
+    </div>
+    <div class="col-md-1">
+      <button type="button" class="btn btn-primary" (click)="logout()" style="border-radius: 10%;margin-top:15px;"><i class="w3-medium fa fa-sign-out"></i>  Logout</button>
+    </div> -->
+  </div>
+</div>
+<div class="row" style="margin-top:20px;margin-left:0px;margin-right:0px;">
+ 
+
+
+
+  <table style=" margin: 0 auto;border:2px solid white;background-color:white;">
+    <thead>
+      
+      <th width="20%">Sl.No</th>
+      <th width="20%">Organisation Name</th>
+      <th width="20%">Organisation Code</th>
+      <!-- <th width="20%">Address</th> -->
+      <th width="20%"></th>
+
+    </thead>
+    <tbody>
+      <!-- display the company list -->
+      <tr *ngFor="let test of companylist ; let i = index">
+				<td><a [routerLink]="" (click)="displayUsers(test.company_info_id,test.company_name)">{{test.company_info_id}}</a></td>
+				<td>{{test.company_name}} </td>
+				<td>{{test.company_code}} </td>
+        <!-- <td>{{test.company_address}}</td> -->
+        <td><button type="button" class="btn btn-primary" (click)="edit(test.company_info_id)">Edit</button>
+          <!-- <button type="button" class="btn btn-success" (click)="view(test.company_info_id)">View</button> -->
+        </td>
+				
+			</tr>
+    </tbody>
+  </table>
+</div>
+
+
+
